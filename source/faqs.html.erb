@@ -1,0 +1,37 @@
+---
+title: FAQs
+---
+<div class="faqs">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 medium-10 medium-centered columns">
+        <h1>FAQs.</h1>
+        <dl>
+          <% data.faqs.each do |faq| %>
+          <dt><%= faq.question %></dt>
+          <dd><%= multiline faq.answer %></dd>
+          <% end %>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <a name="transfers"></a>
+  <section class="refunds-and-transfers">
+    <div class="row">
+      <div class="small-12 medium-10 medium-centered columns">
+        <h2>Refunds and transfers.</h2>
+        <p>Refunds on Training tickets are available until February 1, 2017, 11:59pm PST, and refunds on Conference tickets are available until February 27, 2017, 11:59pm PST. After that, tickets can only be transferred.</p>
+        <p><strong>Activities are non-refundable, but are transferrable.</strong></p>
+        <p>To transfer tickets from one Training or Activity to another, <a href="https://www.eventbrite.com/support/articles/en_US/How_To/how-to-transfer-to-a-different-event-or-ticket-type?lg=en_US" target="_blank">use the default Eventbrite UI</a>.</p>
+        <p>The deadline for all ticket transfers is March 13, 2017, 11:59pm PST.</p>
+        <p>
+          DevSwag Merchandise Orders are not refundable, but can be picked up by alternate authorized contacts on-site at EmberConf. If you order merchandise but later cancel your registration, please reach out to us via email to authorize some other specific attendee to retrieve your order.
+        </p>
+        <p class="call-to-action"><a href="https://tilde.wufoo.com/forms/transfer-your-ticket/" target="_blank">Transfer your ticket to someone else</a></p>
+        </p>
+      </div>
+    </div>
+  </section>
+  <%= partial "footer" %>
+</div>

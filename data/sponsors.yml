@@ -1,0 +1,120 @@
+package_sponsors:
+  diamond:
+    - name: "Skylight"
+      image: skylight-logo.png
+      description: "Skylight﻿ is a smart profiler that lets you quickly diagnose and resolve performance issues with your Rails apps where it matters: in production. It's built by the fine folks at <a href='http://www.tilde.io'>Tilde Inc</a>, who have spent the last few years building open source projects like Ember, Handlebars and Rails itself. Visit <a href='http://www.skylight.io'>skylight.io</a> to start your free trial."
+      website: "http://www.skylight.io"
+    - name: "LinkedIn"
+      image: linkedin-logo.png
+      description: "<a href='http://www.linkedin.com'>LinkedIn</a> is the world's largest professional network with 300 million members in over 200 countries and territories around the globe. Our mission is to connect the world's professionals to make them more productive and successful. Join LinkedIn today."
+      website: "http://www.linkedin.com"
+  gold:
+    - name: "Playstation"
+      image: playstation.png
+      description: "PlayStation Network is a core Sony business that offers cutting edge digital entertainment experiences encompassing areas of gaming, music, television and video streaming. With over 65 million active, connected users worldwide (and growing!), our services are accessed via PlayStation 4 and other popular connected devices. "
+      website: "https://playstation.com/"
+    - name: "Sentry"
+      image: sentry.png
+      description: Sentry is modern error logging. Get the stacktrace, request info, and user context of every error. Sentry is completely open source (client and server), supports over two dozen languages and frameworks, has hundreds of contributors, and is deployed in tens of thousands of organizations. Don’t just log errors, resolve them."
+      website: "http://www.getsentry.com"
+    - name: "Netflix"
+      image: netflix.png
+      description: "How do you spark joy in hundreds of millions of people? It starts with a vision—that technology can give voice to stories around the world. Netflix empowers a small band of creatives to do what no studio has ever done—tell hundreds of stories you fall in love with and stay up watching. Binge with us."
+      website: "http://www.netflix.com"
+    - name: "Addepar"
+      image: addepar-logo.png
+      description: "Addepar: the financial operating system designed to bring common sense and ethical, data-driven investing to our financial world. Addepar handles all types of assets in any currency so investors and advisors have a clearer financial picture. With customizable reporting, financial managers can visualize and communicate relevant information. Addepar has 200+ clients representing $500+ billion AUM."
+      website: "https://www.addepar.com"
+    - name: "Blue Apron"
+      image: blueapron.png
+      description: "At Blue Apron, our mission is to make incredible home cooking accessible to everyone—from the novice cook just getting started to the experienced chef. Each week we send hundreds of thousands of customers all the pre-measured and perfectly proportioned ingredients they need to prepare delicious and healthy meals at home."
+      website: "https://www.blueapron.com"
+  silver:
+    - name: "simplabs"
+      image: simplabs-logo.png
+      description: "simplabs is a web engineering consultancy in Munich, Germany. We work with clients ranging from startups to enterprises, consulting and building solutions with Ember.js, Ruby on Rails and Elixir. We also provide individual and group training."
+      website: "http://simplabs.com"
+    - name: "WyeWorks"
+      image: wyeworks-logo.png
+      description: "WyeWorks, co-founded by a Rails Core Team member, started as a Rails dev shop in 2008 and expanded its practice to Ember three years ago. We've worked for clients like WildFire (a Google product) and CrazyEgg, contributed to the Rails ecosystem and created Rails API. Check out our own Samanta's talk at this conference."
+      website: "https://wyeworks.com/"
+  #   - name: "Locus Energy"
+  #     image: locus-energy-logo-new.png
+  #     description: "Locus Energy builds data monitoring and analytics tools for solar power systems. With some of the biggest names in solar as customers, our work has a tangible impact on the environment and economy. Ember has played an integral role as we build modern, performant web applications."
+  #     website: "http://locusenergy.com/"
+    - name: "RSA"
+      image: rsa.png
+      description: "RSA provides more than 30,000 customers around the world with the essential security capabilities to protect their most valuable assets from cyber threats. With RSA's award-winning products, organizations effectively detect, investigate, and respond to advanced attacks; confirm and manage identities; and ultimately, reduce IP theft, fraud, and cybercrime."
+      website: "https://www.rsa.com/"
+    - name: "Code All Day"
+      image: codeallday-logo.png
+      description: "Code All Day is a two-woman consultancy specializing in the end-to-end development of web apps using Ember. There's more to creating an application than code; we work with you to figure out exactly what you want to build and what your customers need."
+      website: "http://codeallday.com"
+    - name: "EmberMap"
+      image: embermap.png
+      description: "EmberMap is a video training site for teams working with Ember.js. We curate and produce high-quality screencasts and articles that teams use to keep their developers up to date with the latest Ember techniques. We're passionate about our community and give back through speaking, training and open-source."
+      website: http://www.embermap.com
+    - name: "Envy"
+      image: envy-logo.png
+      description: "Envy is a web consultancy that helps transform ideas into successful products. We believe that great ideas can solve problems and improve lives—we work to solve those problems and improve the world around us through design and technology."
+      website: "http://madewithenvy.com/"
+  bronze:
+    - name: "Sticker Mule"
+      image: sticker-mule-logo.png
+      description: "Sticker Mule is the fastest and easiest way to buy custom stickers. We offer free online proofs, 5 day turnaround and free UPS Ground shipping. With print runs starting at $49, we aim to be the Internet's favorite sticker printer."
+      website: "http://www.stickermule.com/unlock?ref_id=3368978601"
+    - name: "Condé Nast"
+      image: condenast-logo.png
+      description: "Condé Nast is a premier media company renowned for producing the highest quality content for the world's most influential audiences. Attracting 131 million consumers across its industry-leading print, digital and video brands, the company's portfolio include: Ars Technica, Vogue, Vanity Fair, Glamour, GQ, The New Yorker, Epicurious, Wired, Pitchfork, and more."
+      website: "http://www.condenast.com/"
+    - name: "Mike.Works"
+      image: mikeworks.png
+      description: "We turn talented developers into experts, through technical training on cutting-edge topics, with a focus on practical application in the real world. Our proven thorough and incremental approach to teaching ensures we can dive deep into important topics, even if students have varying levels of experience."
+      website: "https://mike.works/"
+    - name: "201 Created"
+      image: 201-created-logo-new.png
+      description: "201 Created is a small consulting partnership with big app experience from NYC. We're adept at migrating traditional applications to Ember and at writing software from scratch. Our founders are startup engineers who know how to move fast, build in-house skills, and work with open source communities."
+      website: "http://www.201-created.com/"
+    - name: "Echobind"
+      image: echobind-logo.png
+      description: "Echobind is a web and mobile agency specializing Ember, React Native, Rails and Elixir/Phoenix. We improve existing products, bring new concepts to life, and increase team proficiency across industries ranging from financial services to healthcare."
+      website: "http://www.echobind.com/"
+    - name: "Real Thread"
+      image: realthread.png
+      description: "Real Thread prints super soft custom t-shirts that help brands grow. We are especially known for our amazingly soft t-shirts using our uniquely formulated SuperSoft ink. We can print a minimum of 20 shirts to 10,000+. We offer guaranteed delivery dates, wholesale pricing and more! Experience amazing."
+      website: "http://www.realthread.com"
+other_sponsors:
+  women helping women program sponsors:
+    - name: "Netflix"
+      image: netflix.png
+      description: "There are no formulas when it comes to creating the best Netflix Originals. We recognize that our best hires also don't fit a mold, and come from all walks of life. As we grow, creating a culture of diverse perspectives and inclusivity is important to our core values. Join us!"
+      website: "http://www.netflix.com"
+      anchor: "whw-netflix"
+#     - name: "Fastly"
+#       image: fastly-logo.png
+#       description: "Fastly is the only CDN that gives businesses complete control over how they serve content, access to real-time performance analytics, and the ability to cache content at the edge. Our global network allows enterprises to improve customer experiences across their websites and mobile applications while maintaining fast and reliable performance."
+#       website: "http://fastly.us/1OHvuGw"
+#       anchor: "whw-fastly"
+#   hallway track lounge sponsors:
+#     - name: "Kickback"
+#       image: kickback-logo.png
+#       description: "Kickback lets you bet on yourself in video games for cash. Login, put down money and pwn noobs. Who knows, you might be a millionaire by next week."
+#       website: "http://kickback.com"
+#       anchor: "hallway-kickback"
+#   training and activity sponsors:
+#     - name: "CodeSchool"
+#       image: "codeschool-logo.png"
+#       description: "Code School is an online learning destination for existing and aspiring developers that teaches through entertaining content. Each course is built around a creative theme and storyline so that it feels like you’re playing a game, not sitting in a classroom. We combine gaming mechanics with video instruction and in-browser coding challenges to make learning fun and memorable."
+#       website: "http://www.codeschool.com/"
+#       anchor: "training-activity-codeschool"
+#     - name: "201 Created"
+#       image: 201-created-logo.png
+#       description: "201 Created is a small consulting partnership with big app experience from NYC. We're adept at migrating traditional applications to Ember and at writing software from scratch. Our founders are startup engineers who know how to move fast, build in-house skills, and work with open source communities."
+#       website: "http://www.201-created.com/"
+#       anchor: "training-activity-201created"
+  video sponsors:
+    - name: "Isle of Code"
+      image: isleofcode.png
+      description: "Isle of Code provides on-demand Ember development from very experienced hackers. We frequently work on Cordova/Phonegap & iBeacon based Ember projects. est. 2012, we are based in Toronto + Chicago."
+      website: "http://www.isleofcode.com/"
+      anchor: "video-isleofcode"

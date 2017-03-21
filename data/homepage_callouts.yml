@@ -1,0 +1,17 @@
+- headline: "Become a sponsor"
+  description: "Show your support for the Ember community while promoting your product to 1000+ developers. Don't miss the opportunity of the year!"
+  call_to_action: "See Sponsorship Packages"
+  href: "become-a-sponsor.html"
+  jpg: "become-a-sponsor-callout"
+
+- headline: "Women: Get involved"
+  description: "There are so many talented women in the Ember community, and we’d all be better off if more were in leadership roles."
+  call_to_action: "Ember Women Helping Women"
+  href: "//emberwomen.com"
+  jpg: "women-get-involved-callout"
+
+- headline: "Apply for a scholarship"
+  description: "Free tickets were available for community members who might not otherwise be able to make it. Tickets have been awarded!"
+  call_to_action: "Notifications in Process"
+  href: "https://tilde.wufoo.com/forms/emberconf-2017-scholarships/"
+  jpg: "scholarship-callout"

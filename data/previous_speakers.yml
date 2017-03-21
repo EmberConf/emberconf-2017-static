@@ -1,0 +1,84 @@
+- name: "Yehuda Katz"
+  image: yehuda-katz.jpg
+- name: "Tom Dale"
+  image: tom-dale.jpg
+- name: "Leah Silber"
+  image: leah-silber.jpg
+- name: "Matthew Beale"
+  image: matt-beale.png
+- name: "Stefan Penner"
+  image: stef-penner.jpg
+- name: "John Kleinschmidt"
+  image: john-kleinschmidt.jpg
+- name: "Chris Ball"
+  image: chris-ball.jpeg
+- name: "Brenna O'Brien"
+  image: brenna-obrien.jpg
+- name: "Brigitte Warner"
+  image: brigitte-warner.jpg
+- name: "Felix Rieseberg"
+  image: felix-rieseberg.png
+- name: "Ju Lui"
+  image: ju-liu.jpg
+- name: "Alex Blom"
+  image: alex-blom.jpeg
+- name: "Chris LoPresto"
+  image: chris-lopresto.jpg
+- name: "Kelly Senna"
+  image: kelly-senna.jpg
+- name: "Vaidehi Joshi"
+  image: vaidehi-joshi.png
+- name: "Estelle DeBlois"
+  image: estelle-deblois.jpg
+- name: "Chad Hietala"
+  image: chad-hietala.jpg
+- name: "Mike Pack"
+  image: mike-pack.jpg
+- name: "Ray Tiley"
+  image: ray-tiley.jpg
+- name: "Matt McKenna"
+  image: matt-mckenna.png
+- name: "Ivan Vanderbyl"
+  image: ivan-vanderbyl.jpg
+- name: "Liz Baillie"
+  image: liz-baillie.jpg
+- name: "Lauren Elizabeth Tan"
+  image: lauren-tan.jpg
+- name: "Katie Gengler"
+  image: katie-gengler.jpg
+- name: "Charles Lowell"
+  image: charles-lowell.jpg
+- name: "Xavier Cambar"
+  image: xavier-cambar.jpeg
+- name: "James Kyle"
+  image: james-kyle.jpg
+- name: "Jade Applegate"
+  image: jade-applegate.jpg
+- name: "Godfrey Chan"
+  image: godfrey-chan.png
+- name: "Lisa Gringl"
+  image: lisa-gringl.png
+- name: "Francesco Novy"
+  image: francesco-novy.png
+- name: "Toran Billups"
+  image: toran-billups.jpeg
+- name: "Bear Douglas"
+  image: bear-douglas.jpg
+- name: "Cory Forsyth"
+  image: cory-forsyth.jpg
+- name: "Nathaniel Bibler"
+  image: nate-bibler.jpeg
+- name: "Igor Terzic"
+  image: igor-terzic.jpg
+- name: "Mike North"
+  image: mike-north.jpg
+- name: "Heyjin Kim"
+  image: heyjin-kim.jpg
+- name: "DeVaris Brown"
+  image: devaris-brown.jpg
+- name: "Erik Bryn"
+  image: erik-bryn.jpg
+- name: "Brittany Storoz"
+  image: brittany-storoz.jpg
+- name: "John Paul"
+  image: john-paul.jpg

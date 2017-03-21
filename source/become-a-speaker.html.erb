@@ -1,0 +1,78 @@
+---
+title: Speakers
+---
+
+<div class="speakers">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>We're selecting our speakers now!</h1>
+        <p>EmberConf is great because our speakers are great, and you could be one of them. Our Call for Papers was open to the public, started out blind, and featured a collaborative process where we help improve and perfect proposals so they're ready to be accepted.</p>
+        <p>
+          Proposals were accepted and reviewed from October 6th until November 18th, 2016. Final notifications are in progress.
+        </p>
+        <a href="http://cfp.emberconf.com/events" target="_blank" class="round button">Review Your Proposal</a>
+      </div>
+    </div>
+  </section>
+  <section class="speaker-photo">
+    <figure>
+      <img src="/images/sam-selikoff-speaking.jpg" alt="Sam Selikoff delivering a talk at EmberConf"/>
+      <figcaption>Sam Selikoff delivering his talk, <a href="https://www.youtube.com/watch?v=iwPsNTkyCcA" class="video">"Bring Sanity to Frontend Infrastructure with Ember"</a> at EmberConf 2015.</figcaption>
+    </figure>
+  </section>
+  <p class="photo-caption"></p>
+  <section class="previous-speakers">
+    <div class="row">
+      <div class="small-12 columns">
+        <h2>You'll be joining good company.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="small-12 columns">
+        <% data.previous_speakers.shuffle.each do |speaker| %><li> <%# Keep formatting for inline-block spacing %>
+          <div>
+            <div class="photo">
+              <img src="images/speakers/<%= speaker.image %>" alt="<%= speaker.name %>" data-no-retina >
+            </div>
+            <p><%= speaker.name %></p>
+          </div>
+        </li><% end %> <%# Keep formatting for inline-block spacing %>
+      </ul>
+    </div>
+  </section>
+
+
+  <%= partial "footer" %>
+
+  <script>
+  $(".toggle-link").click(function () {
+    $toggleLink = $(this);
+    //getting the next element
+    $toggledContent = $toggleLink.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $toggledContent.slideToggle(300, function () {
+      //execute this after slideToggle is done
+      //change text of header based on visibility of content div
+      // $('.view-hide').text(function () {
+      //   //change text based on condition
+      //   return $toggledContent.is(":visible") ? "Close " : "View ";
+      // });
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+    $('.video').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script src="javascripts/magnificent-popup.js"></script>
+</div>

@@ -1,0 +1,5 @@
+//= require "jquery-3.0.0.min.js"
+//= require "jquery-ui.min.js"
+//= require "retina.js"
+//= require "magnificent-popup.js"
+//= require "schedule.js"

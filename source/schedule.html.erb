@@ -1,0 +1,149 @@
+---
+title: Schedule
+---
+
+<div class="schedule">
+  <%= partial "header" %>
+  <section class="day-nav">
+    <div class="sticky-nav">
+      <div class="row">
+        <div class="small-12 columns">
+          <ul>
+            <li>
+              <a href="#pre-conf-activities">Pre-Conf Activities</a>
+            </li>
+            <li>
+              <a href="#day-1">Day 1</a>
+            </li>
+            <li>
+              <a href="#day-2">Day 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <% data.schedule.each do |day, daily_schedule| %>
+
+
+  <a name="<%= day %>" class="anchor"></a>
+  <section class="day">
+    <div class="row">
+      <div class="small-12 columns day-intro">
+        <h2><%= daily_schedule.title %></h2>
+        <% if daily_schedule.subhead.present? %>
+        <p><%= daily_schedule.subhead %></p>
+        <% end %>
+      </div>
+    </div>
+    <ol class="row">
+      <% daily_schedule.items.each do |item| %>
+
+      <li class="small-12 columns<% if item.description.present? %> accordion<% end %>" id="<%= item.name.parameterize %>">
+        <div class="row small-collapse medium-uncollapse">
+          <% if item.header.present? %>
+          <div class="event-time small-12 medium-4 columns">
+            <div>&nbsp;</div>
+          </div>
+          <% else %>
+          <div class="event-time small-12 medium-4 columns">
+            <p><%= item.start %><span class="end-time"><%= item.end %></span></p>
+          </div>
+          <% end %>
+          <div class="event-info small-12 medium-8 columns">
+            <% data.speakers.each do |speaker| %>
+
+            <% if item.speaker2.present? %>
+            <% if speaker.name == item.speaker2 %>
+            <div class="img2">
+              <img src="images/speakers/<%= speaker.image %>" alt="<%= speaker.name %>" class="round" data-no-retina>
+            </div>
+            <% end %>
+            <% end %>
+
+            <% end %>
+
+
+
+
+
+            <% data.speakers.each do |speaker| %>
+
+            <% if item.speaker.present? %>
+            <% if speaker.name == item.speaker %>
+            <div class="img">
+              <img src="images/speakers/<%= speaker.image %>" alt="<%= speaker.name %>" class="round" data-no-retina>
+            </div>
+            <% end %>
+            <% end %>
+            <% end %>
+
+
+            <h3 class="<% if item.header.present? %>schedule-chunk<% end %>">
+              <% if item.header.present? %>
+              <%= item.name %>
+              <% else %>
+              <%= item.name %>
+              <% end %>
+            </h3>
+
+
+            <% if item.speaker %>
+            <p class="session-speakers"><% data.speakers.each do |speaker| %><% if item.speaker == speaker.name %><%= link_to item.speaker, "speakers.html##{speaker.anchor}" %><% end %><% end %><% if item.speaker2 %><% data.speakers.each do |speaker| %><% if item.speaker2 == speaker.name %>, <%= link_to item.speaker2, "speakers.html##{speaker.anchor}" %><% end %><% end %><% end %></p>
+            <% end %>
+
+
+
+            <% if item.addon.present? or item.soldout.present?%>
+            <% if item.soldout.present? %>
+            <span class="sold-out">Sold out<% if item.waitlist == "Yes" %><span class="waitlist">Waitlist</span><% end %></span>
+            <% else %>
+            <% if item.addon.present? %>
+            <span class="addon">Paid addon</span>
+            <% end %>
+
+            <% end %>
+            <% end %>
+            <div class="accordion-content">
+              <% if item.waitlist == "Yes" %>
+              <p class="waitlist-notification">
+                This is event is sold out. <a href="https://tilde.wufoo.com/forms/emberconf-2017-waitlist/def/field<%= item.wufoo_api_id %>=<%= item.name %>" target="_blank">Join the waitlist</a> to be notified if more tickets become available.
+              </p>
+              <% end %>
+              <%= multiline item.description %>
+
+              <% if item.addon.present? %>
+              <% if item.soldout %>
+                <% else %>
+              <a href="register.html" target="_blank" class="button round">Register to attend</a>
+              <% end %>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <%- end %>
+
+    </ol>
+
+  </section>
+
+  <% end %>
+  <div id="end-sticky"></div>
+
+
+
+
+
+
+  <%= partial "footer" %>
+
+
+
+
+
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "Emberconf2017",
+  "version": "20.1.7",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tildeio/emberconf-2016"
+  },
+  "author": "Tilde",
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/tildeio/emberconf-2016",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.5",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-newer": "^1.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

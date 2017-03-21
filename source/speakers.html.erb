@@ -1,0 +1,118 @@
+---
+title: Speakers
+---
+
+<div class="speakers">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1 class="centered">Who's speaking at EmberConf?</h1>
+      </div>
+    </div>
+  </section>
+  <section class="speaker-list">
+    <div class="row">
+      <ul class="small-12 columns">
+        <% data.speakers.each do |speaker| %>
+        <li class="speaker" id="<%= speaker.anchor %>">
+          <div class="row collapse">
+            <div class="small-12 medium-4 columns">
+              <div class="photo">
+                <img src="images/speakers/<%= speaker.image %>" alt="<%= speaker.name %>" data-no-retina>
+              </div>
+
+            </div>
+            <div class="speaker-bio small-12 medium-8 columns end">
+              <h4>
+                <span class="speaker-name"><%= speaker.name %></span>
+                  <% if speaker.twitter.present? %>
+                    <span class="twitter"><a href="https://twitter.com/<%= speaker.twitter %>" title="Visit <%= speaker.name %> on Twitter" target="_blank"></a></span>
+                  <% end %>
+              </h4>
+              <% if speaker.core_member or speaker.keynote_speaker or speaker.trainer or speaker.bonus present? %>
+              <div class="speaker-tags">
+                <% if speaker.keynote_speaker %>
+                <div class="speaker-tag keynote-speaker">
+                  Keynote
+                </div>
+                <% end %>
+                <% if speaker.core_member %>
+                <div class="speaker-tag core-member">
+                  Core
+                </div>
+                <% end %>
+                <% if speaker.trainer %>
+                <div class="speaker-tag trainer">
+                  Trainer
+                </div>
+                <% end %>
+                <% if speaker.bonus %>
+                <div class="speaker-tag bonus">
+                  BonusConf
+                </div>
+                <% end %>
+              </div>
+
+              <% end %>
+
+              <p><%= speaker.bio %></p>
+
+              <% if speaker.pitch_video_id present? %>
+              <a href="https://www.youtube.com/watch?v=<%= speaker.pitch_video_id %>" class="pitch-video" title="Watch <%= speaker.name %>'s pitch video">
+                <img src="http://i.ytimg.com/vi/<%= speaker.pitch_video_id %>/hqdefault.jpg" alt="Watch <%= speaker.name %>'s pitch video">
+              </a>
+              <% end %>
+
+              <div class="speaker-sessions">
+                <% data.schedule.each do |day, daily_schedule| %>
+                <% daily_schedule.items.each do |item| %>
+                <% if speaker.name == item.speaker || speaker.name == item.speaker2 || speaker.name == item.speaker3 || speaker.name == item.speaker4 || speaker.name == item.speaker5 %>
+                <div class="speaker-session-info">
+                  <p>
+                    <a class="toggle-link">
+                      <%= item.session_type %>:
+                      <span><%= item.name %></span>
+                    </a>
+                  </p>
+                  <div class="toggled-content">
+                    <h3><%= item.name %></h3>
+                    <p class="call-to-action"><a href="schedule.html#<%= item.name.parameterize %>"><%= item.start %>-<%= item.end %></a></p>
+                    <p><%= item.description %></p>
+                  </div>
+                </div>
+                <% end %>
+                <% end %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+
+  </section>
+
+  <%= partial "footer" %>
+
+  <script>
+  $('.toggle-link').click( function() {
+    $(this).parent('p').next('div').toggleClass("open");
+    $(this).toggleClass("open");
+  } );
+  </script>
+  <script>
+  $(document).ready(function() {
+    $('.pitch-video').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script src="javascripts/magnificent-popup.js"></script>
+</div>

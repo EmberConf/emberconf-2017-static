@@ -1,0 +1,79 @@
+packages:
+  - name: "Bronze"
+    cost: "$3,000"
+  - name: "Silver"
+    cost: "$6,000"
+  - name: "Gold"
+    limited_quantities: true
+    # sold_out: true
+    cost: "$10,000"
+  - name: "Diamond"
+    limited_quantities: true
+    # sold_out: true
+    cost: "$14,000"
+benefits:
+  - name: "Logo in website footer"
+    diamond: true
+    gold: true
+    silver: true
+    bronze: true
+  - name: "Logo and description on sponsor webpage"
+    diamond: true
+    gold: true
+    silver: true
+    bronze: true
+  - name: "Logo on sponsor signage"
+    diamond: true
+    gold: true
+    silver: true
+    bronze: true
+  - name: "Opportunity to distribute handouts and/or swag"
+    requires_materials: true
+    diamond: true
+    gold: true
+    silver: true
+  - name: "Recognition in welcome and announcements"
+    diamond: true
+    gold: true
+    silver: true
+  - name: "Sponsor designation in emails and other marketing"
+    diamond: true
+    gold: true
+    silver: true
+  - name: "Sponsor table in exhibit hall"
+    diamond: true
+    gold: true
+    limited_quantities: true
+    # sold_out: true
+  - name: "Opportunity to sponsor bags and/or lanyards"
+    requires_materials: true
+    diamond: true
+    gold: true
+    limited_quantities: true
+    paid_addon: true
+    # sold_out: true
+  - name: "Opportunity to host or headline after-hours events"
+    diamond: true
+    gold: true
+    limited_quantities: true
+    paid_addon: true
+    # sold_out: true
+  - name: "Logo stickers in conference sticker bag"
+    requires_materials: true
+    diamond: true
+    gold: true
+  - name: "Logo on screens during breaks and at day's end"
+    diamond: true
+  - name: "2-minute plenary Keynote address"
+    diamond: true
+  - name: "Logo included on conference videos"
+    diamond: true
+  - name: "Postings on Official Ember Job Board"
+    diamond: "3"
+    gold: "2"
+    silver: "1"
+  - name: "Conference session passes"
+    diamond: "5"
+    gold: "3"
+    silver: "2"
+    bronze: "1"

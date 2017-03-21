@@ -1,0 +1,93 @@
+---
+title: Sponsors
+---
+
+<div class="our-xsponsors">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 large-8 columns">
+        <h1>Our sponsors.</h1>
+        <p>We wouldn’t be able to host EmberConf without help from these amazing companies. Check &rsquo;em out.</p>
+      </div>
+      <div class="small-12 large-4 columns">
+        <div class="become-a-xsponsor-callout">
+          <h3>Sponsor EmberConf.</h3>
+          <p>Support the community while promoting your brand to 1,000+ developers.</p>
+          <p class="call-to-action"><a href="become-a-sponsor.html">Become a sponsor</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="current-xsponsors">
+    <ol class="xsponsor-list">
+      <% data.sponsors.package_sponsors.each do |level, sponsors| %>
+      <li>
+        <div class="row">
+          <div class="small-12 columns">
+            <h3><%=level.titlecase%></h3>
+          </div>
+        </div>
+        <ul class="row">
+          <% sponsors.each do |sponsor| %>
+          <li class="xsponsor">
+            <div class="logo small-8 medium-3 columns">
+              <a href="<%= sponsor.website %>" target="_blank">
+                <img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
+              </a>
+            </div>
+            <p class="description small-12 medium-8 medium-offset-1 columns">
+              <%= sponsor.description %>
+            </p>
+          </li>
+          <% end %>
+        </ul>
+      </li>
+      <% end %>
+
+      <% if data.sponsors.other_sponsors %>
+      <li>
+
+        <div class="row">
+          <div class="small-12 columns">
+            <h3>Other sponsors</h3>
+          </div>
+        </div>
+
+        <ul>
+          <% data.sponsors.other_sponsors.each do |category, sponsors| %>
+          <li>
+            <div class="row">
+              <div class="xsponsor">
+                <div class="small-12 columns">
+                  <h4 class="other-xsponsor-category"><%=category.titlecase%></h4>
+                </div>
+              </div>
+
+            </div>
+            <ul class="row">
+              <% sponsors.each do |sponsor| %>
+              <li class="other-xsponsor" id="<%= sponsor.anchor %>">
+                <div class="logo small-8 medium-3 columns">
+                  <a href="<%= sponsor.website %>" target="_blank">
+                    <img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
+                  </a>
+                </div>
+                <div class="small-12 medium-8 medium-offset-1 columns">
+                  <p class="description">
+                    <%= sponsor.description %>
+                  </p>
+                </div>
+              </li>
+              <% end %>
+            </ul>
+          </li>
+          <% end %>
+        </ul>
+      </li>
+      <% end %>
+    </ol>
+  </section>
+  <%= partial "footer" %>
+</div>

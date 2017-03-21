@@ -1,0 +1,18 @@
+<section class="xsponsors-footer">
+	<div class="row">
+		<div class="small-12 columns">
+			<h2>Meet our sponsors.</h2>
+		</div>
+	</div>
+
+	<ol class="row">
+		<% data.sponsors.package_sponsors.each do |level, sponsors| %>
+		<li class="xsponsor-level small-12 columns">
+			<div>
+				<h3><%=level.titlecase%></h3>
+				<%= partial "sponsor-list", locals: {sponsors: sponsors } %>
+			</div>
+		</li>
+		<% end %>
+	</ol>
+</section>

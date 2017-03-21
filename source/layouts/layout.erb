@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta property="og:url" content="http://emberconf.com" />
+  <meta property="og:image" content="http://emberconf.com/images/emberconf-2017-og-logo.png" />
+  <meta property="og:title" content="EmberConf 2017" />
+  <meta property="og:description" content="Join us on March 28 and 29 in Portland, OR for the flagship event of the Ember Community." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <link rel="author" href="humans.txt">
+  <%# Use title if it's in the page YAML frontmatter %>
+  <title><%= current_page.data.title %> | EmberConf 2017 - March 28 &amp; 29, Portland, OR.</title>
+  <%= stylesheet_link_tag "styles" %>
+
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="stylesheets/ie-styles.css" />
+  <![endif]-->
+  <link href='//fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <%= yield %>
+</body>
+</html>

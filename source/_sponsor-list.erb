@@ -1,0 +1,7 @@
+<ul class="xsponsor-images">
+    <% sponsors.each do |sponsor| %><li>
+      <a href="<%= sponsor.website %>" target="_blank">
+        <img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
+      </a>
+    </li><% end %>
+</ul>

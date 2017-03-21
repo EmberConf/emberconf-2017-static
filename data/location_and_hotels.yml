@@ -1,0 +1,37 @@
+airlines:
+  - name: Delta
+    image: delta-logo.png
+    promo_code: NMM3C
+    discount: "Save 2–10%"
+    booking_link: "www.delta.com/meeting"
+  - name: Alaska Airlines
+    image: alaska-airlines-logo.png
+    promo_code: ECMW534
+    discount: "Save 2–7%"
+    booking_link: "AlaskaAir.com"
+directions:
+  - title: "From I-5 Northbound"
+    details: "Take Rose Quarter/Broadway-Weidler St Exit (302A), go right on Weidler, and right on Martin Luther King Jr. Blvd."
+    image: "from-i-5-northbound.png"
+  - title: "From I-5 Southbound"
+    details: "Take Rose Quarter/City Center Exit (302A), go across Broadway, then left on Weidler, and right on Martin Luther King Jr. Blvd."
+    image: "from-i-5-southbound.png"
+  - title: "From I-84"
+    details: "Take the Lloyd Blvd exit (1) and stay on Lloyd Blvd all the way to the Convention Center."
+    image: "from-i-84.png"
+  - title: "From Portland International Airport (PDX)"
+    details: "Take I-205 South to I-84 West. Exit at Lloyd Blvd (1) and stay on Lloyd Blvd all the way to the Convention Center."
+    image: "from-pdx.png"
+  - title: "Public Transit from PDX"
+    details: "Board the MAX Red Line to City Center and Beaverton TC. Exit at the Convention Center MAX Station. The trip should take approximately 33 minutes, with about 5 minutes of walking (mostly inside the OCC) once you arrive. Tickets can be purchased at PDX in the boarding area."
+    image: "public-transit-from-pdx.png"
+transportation:
+  - title: "Biking"
+    details: "Bike Parking at the OCC is abundant. <a href='https://www.oregoncc.org/sites/default/files/bike_racks_parking_garages_map_landscape.pdf' target='_blank'>See the map of bike parking locations</a> for more details. Stay safe and be sure to bring a lock!"
+    image: "transportation-biking.png"
+  - title: "Uber"
+    details: "Uber has come to Portland! <a href='https://www.uber.com/invite/uberTechConf' target='_blank'>Use this link</a> and promo code <strong>uberTechConf</strong> to save up to $20 off your first ride (code can also be entered in the app). Good for airport trips and all over Portland."
+    image: "transportation-uber.png"
+  - title: "Accessibility"
+    details: "The OCC was built with accessibility in mind. Ramps, no revolving doors, elevators, accessible restrooms and more. For complete and specific details, <a href='https://www.oregoncc.org/accessibility' target='_blank'>check out the OCC Accessibility Guide</a>."
+    image: "transportation-accessibility.png"

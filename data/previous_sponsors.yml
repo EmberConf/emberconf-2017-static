@@ -1,0 +1,71 @@
+previous_sponsors:
+  - name: "Skylight"
+    image: skylight-logo.png
+  - name: "Ticketfly"
+    image: ticketfly-logo.png
+  - name: "Fastly"
+    image: fastly-logo.png
+  - name: "LinkedIn"
+    image: linkedin-logo.png
+  - name: "Heroku"
+    image: heroku-logo.png
+  - name: "Twitch"
+    image: twitch-logo.png
+  - name: "Digital Ocean"
+    image: digital-ocean-logo.png
+  - name: "Addepar"
+    image: addepar-logo.png
+  - name: "Conde Nast"
+    image: condenast-logo.png
+  - name: "simplabs"
+    image: simplabs-logo.png
+  - name: "Locus Energy"
+    image: locus-energy-logo-new.png
+  - name: "Envy"
+    image: envy-logo.png
+  - name: "Fender Musical Instruments"
+    image: fender-logo.png
+  - name: "Canvas"
+    image: canvas-logo.png
+  - name: "Mode Set"
+    image: mode-set-logo.png
+  - name: "Rollbar"
+    image: rollbar-logo.png
+  - name: "Code School"
+    image: code-school-logo.png
+  - name: "Kickstarter"
+    image: kickstarter-logo.png
+  - name: "Hospital Run"
+    image: hospital-run-logo.png
+  - name: "EchoBind"
+    image: echobind-new-logo.png
+  - name: "201 Created"
+    image: 201-created-logo.png
+  - name: "Dollar Shave Club"
+    image: dollar-shave-club-logo.png
+  - name: "Dockyard"
+    image: dockyard-logo.png
+  - name: "WyeWorks"
+    image: wyeworks-logo.png
+  - name: "Code All Day"
+    image: codeallday-logo.png
+  - name: "Freshbooks"
+    image: freshbooks-logo.png
+  - name: "Mandrill"
+    image: mandrill-logo.png
+  - name: "Microsoft"
+    image: microsoft-logo.png
+  - name: "Zendesk"
+    image: zendesk-logo.png
+  - name: "OpenGov"
+    image: opengov-logo.png
+  - name: "Groupon"
+    image: groupon-logo.png
+  - name: "Zenefits"
+    image: zenefits-logo.png
+  - name: "LootCrate"
+    image: lootcrate-logo.png
+  - name: "Customer.io"
+    image: customer-io-logo.png
+  - name: "The Frontside"
+    image: the-frontside-logo.png  

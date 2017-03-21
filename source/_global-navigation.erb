@@ -1,0 +1,12 @@
+<nav>
+    <%= link_to "About", "about.html", id: "nav-about" %>
+    <%= link_to "Speakers", settings.show_speakers ? "speakers.html" : "become-a-speaker.html", id: "nav-speakers" %>
+    <%= link_to "Schedule", "schedule.html", id: "nav-schedule" if settings.show_schedule %>
+    <%= link_to "Location & Hotels", "location-and-hotels.html", id: "nav-location-and-hotels" %>
+    <% if settings.show_sponsors %>
+        <%= link_to "Sponsors", "sponsors.html", id: "nav-xsponsors" %>
+    <% else %>
+        <%= link_to "Become a Sponsor", "become-a-sponsor.html", id: "nav-become-a-xsponsor" %>
+    <% end %>
+    <%= link_to "Register", (settings.allow_registration ? "register.html" : "index.html#register"), class: "round small-button" %>
+</nav>

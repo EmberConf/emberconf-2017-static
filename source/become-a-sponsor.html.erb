@@ -1,0 +1,139 @@
+---
+title: Become a Sponsor
+---
+<div class="become-a-xsponsor">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Become a sponsor.</h1>
+        <p>Promote your product to more than 1,000 attendees, including Ember's top developers, while showing support for the Ember community.</p>
+        <a href="mailto:sponsorships@emberconf.com" class="round button">Email us about sponsorships</a><span><p class="call-to-action"><a href="http://tilde.wufoo.com/forms/a-la-carte-sponsorships/">or shop a-la-carte sponsorships</a></span></p>
+      </div>
+    </div>
+  </section>
+  <section class="xsponsor-packages">
+    <div class="row">
+      <div class="small-12 columns">
+        <table>
+          <thead class="sticky-nav">
+            <tr class="packages">
+              <th class="comparison-header">Choose a package.</th>
+              <% data.sponsorship_packages.packages.each do |package| %>
+              <th class="package <% if package.sold_out %> sold-out <% end %>">
+                <%= package.name %>
+                <% if package.sold_out or package.limited_quantities present? %>
+                <% if package.sold_out %>
+                <span class="sold-out">Sold <br />out</span>
+                <% else %>
+                <span class="limited-quantities">Limited <br />quantities</span>
+                <% end %>
+                <% end %>
+              </th><% end %>
+          </thead>
+
+          <tbody>
+            <% data.sponsorship_packages.benefits.each do |benefit| %>
+            <tr>
+              <th class="benefit"><%= benefit.name %><% if benefit.requires_materials present?%>&#42;<% end %>
+                <% if benefit.limited_quantities or benefit.paid_addon or benefit.sold_out present? %>
+                <div>
+                  <% if benefit.sold_out present? %>
+                  <span class="sold-out">Sold out</span>
+                  <% else %>
+                  <% if benefit.limited_quantities present? %>
+                  <span class="limited-quantities">Limited quantities</span>
+                  <% end %>
+                  <% if benefit.paid_addon present? %>
+                  <span class="paid-addon">Paid addon</span>
+                  <% end %>
+                  <% end %>
+                </div>
+                <% end %>
+              </th>
+              <% if benefit.bronze == true %>
+              <td class="yes" title="Yes"></td>
+              <% else %>
+              <% if benefit.bronze present? && !true %>
+              <td><%= benefit.bronze %></td>
+              <% else %>
+              <td class="no" title="No"></td>
+              <% end %>
+              <% end %>
+              <% if benefit.silver == true %>
+              <td class="yes" title="Yes"></td>
+              <% else %>
+              <% if benefit.silver present? && !true %>
+              <td><%= benefit.silver %></td>
+              <% else %>
+              <td class="no" title="No"></td>
+              <% end %>
+              <% end %>
+              <% if benefit.gold == true %>
+              <td class="yes" title="Yes"></td>
+              <% else %>
+              <% if benefit.gold present? && !true %>
+              <td><%= benefit.gold %></td>
+              <% else %>
+              <td class="no" title="No"></td>
+              <% end %>
+              <% end %>
+              <% if benefit.diamond == true %>
+              <td class="yes" title="Yes"></td>
+              <% else %>
+              <% if benefit.diamond present? && !true %>
+              <td><%= benefit.diamond %></td>
+              <% else %>
+              <td class="no" title="No"></td>
+              <% end %>
+              <% end %>
+            </tr>
+            <% end %>
+            <tr class="cost">
+              <th></th>
+              <% data.sponsorship_packages.packages.each do |package| %>
+              <td><%= package.cost %></td>
+              <% end %>
+            </tr>
+          </tbody>
+          <tfoot class="fine-print" id="end-sticky">
+            <tr>
+              <td colspan="5">&#42;Materials are due by March 6, 2017</td>
+            </tr>
+          </td>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="xsponsor-contact">
+  <div class="row">
+    <div class="small-12 columns">
+      <h2>Get in touch to sign up.</h2>
+      <p>We'll arrange payment and help you get the best out of your sponsorship.</p>
+      <a href="mailto:sponsorships@emberconf.com" class="round button">Email Leah</a><br />
+    </div>
+  </div>
+</section>
+<section class="xsponsor-a-la-carte">
+  <div class="row">
+    <div class="small-12 columns banner">
+      <div class="row collapse medium-uncollapse">
+        <div class="small-12 medium-11 large-9 large-centered medium-centered columns">
+          <div class="image">
+          </div>
+          <div class="text">
+            <h3>We also have individual sponsorships.</h3>
+            <p>Photo booths, scholarships, attendee bags and more!</p>
+            <p class="call-to-action"><a href="http://tilde.wufoo.com/forms/a-la-carte-sponsorships/">Shop a-la-carte</a></p>
+          </div>
+        </div>
+
+      </div>
+      <%= partial "previous-sponsors" %>
+    </div>
+
+  </div>
+</section>
+<%= partial "footer" %>
+</div>
